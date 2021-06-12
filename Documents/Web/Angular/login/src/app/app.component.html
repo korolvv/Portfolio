@@ -1,0 +1,17 @@
+<router-outlet></router-outlet>
+<mat-toolbar>Login page</mat-toolbar>
+<div fxLayoutAlign='center center' fxFlexFill>
+  <mat-card fxFlex="25">
+    <form fxLayoutAlign='stretch' fxLayout='column'>
+      <mat-form-field>
+        <mat-label>Login</mat-label>
+        <input required (change)="access_log($event)" matInput placeholder="Login">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label class="input-password">Password</mat-label>
+        <input required (change)="access_pass($event)" matInput placeholder="Password">
+      </mat-form-field>
+      <button (click)="access_btn()" mat-button>Log in</button>
+    </form>
+  </mat-card>
+</div>
